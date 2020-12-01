@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 8"
+          ]
+        },
+        "useBuiltIns": true
+      }
+    ],
+    "stage-0",
+    "react",
+    "flow"
+  ],
+  "plugins": [
+    "lodash",
+    [
+      "import",
+      {
+        "style": true,
+        "libraryName": "antd"
+      }
+    ],
+    "transform-decorators-legacy",
+    [
+      "transform-runtime",
+      {
+        "helpers": true,
+        "polyfill": false,
+        "regenerator": false
+      }
+    ]
+  ]
+}
